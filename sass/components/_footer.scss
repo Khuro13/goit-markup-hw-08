@@ -1,0 +1,120 @@
+.page-footer {
+  background-color: $footer-bg-color;
+}
+.footer-content {
+  padding: 60px 0;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+.logo-studio {
+  margin-bottom: 20px;
+  color: $accent-color;
+  font-family: Raleway, cursive;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  display: block;
+}
+.address-location,
+.address-item {
+  display: block;
+  line-height: 1.71;
+}
+.address-location {
+  color: $accent-color;
+}
+.address-item {
+  color: $primary-text-color;
+}
+.address-location,
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-address {
+  display: block;
+  flex-direction: column;
+}
+.footer-socials {
+  margin-left: 70px;
+  flex-direction: column;
+}
+.down-text {
+  display: block;
+  margin-bottom: 20px;
+  color: $accent-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.socials-icon {
+  fill: $accent-color;
+}
+.socials-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+  background-color: $ptimary-blue-color;
+  color: $accent-color;
+ }
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+}
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-input {
+  width: 358px;
+  margin: 0;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: #2f303a;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: inherit;
+  outline: none;
+}
+.footer-email {
+  display: flex;
+}
+.footer-button {
+  color: #fff;
+  background-color: #2196f3;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 10px 24px;
+  margin-left: 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button .footer-plane {
+  display: block;
+  margin-left: 10px;
+}
+.footer-sign {
+  margin-left: 93px;
+}

@@ -1,0 +1,35 @@
+.clients-section {
+  padding-bottom: 94px;
+}
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-link:hover svg,
+.clients-link:focus svg {
+  fill: $ptimary-blue-color;
+}
+.clients-icon {
+  fill: $social-color-icons;
+}
+.clients-list .item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  width: 170px;
+
+  &:hover {
+    border-color: $ptimary-blue-color;
+  }
+}
+.clients-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+}
