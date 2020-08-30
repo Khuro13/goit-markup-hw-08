@@ -13,6 +13,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 480px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    &.is-none {
+      display: none;
+    }
+  }
 }
 .hero-title {
   color: $accent-color;

@@ -61,10 +61,9 @@
 
   &:focus,
   &:hover {
-  fill: $ptimary-blue-color;
- }
+    fill: $ptimary-blue-color;
+  }
 }
-
 .modal-title {
   margin-top: 0;
   margin-bottom: 30px;
