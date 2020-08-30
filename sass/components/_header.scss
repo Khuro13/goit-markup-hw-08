@@ -15,7 +15,6 @@
   padding: 0;
   fill: currentColor;
   cursor: pointer;
-  transform: rotate(180deg);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,6 +37,7 @@
   display: none;
 }
 .menu {
+  width: 480px;
   margin: 0;
   text-align: center;
   display: none;
@@ -73,6 +73,9 @@
   text-decoration: none;
   font-size: 26px;
   line-height: 1.19;
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 .logo-accent {
   color: $ptimary-blue-color;
