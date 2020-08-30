@@ -214,6 +214,9 @@ p {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #ececec;
+  min-height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .site-nav-link--current {
@@ -312,21 +315,6 @@ p {
   padding: 200px 0;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero1.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero1.png);
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 480px;
-  height: 400px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .hero.is-none {
-    display: none;
-  }
 }
 
 .hero-title {
