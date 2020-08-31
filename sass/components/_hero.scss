@@ -14,25 +14,28 @@
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../images/hero-1200.png);
+    url(../images/header-img.jpg);
 }
 @media screen and (max-width: 480px) {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url(../images/hero-480.png);
+ .hero{background-image: linear-gradient(
+  to right,
+  rgba(47, 48, 58, 0.8),
+  rgba(47, 48, 58, 0.8)
+),
+url(../images/header-img480.jpg);}
+  
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
+    .hero {
+      background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../images/hero-480@2x.png);
+      url(../images/header-img480-2x.jpg);
+    }
   }
 }
 
