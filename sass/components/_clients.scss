@@ -1,17 +1,27 @@
+.clients-container {
+  // padding-left: 15px;
+  // padding-right: 15px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+}
 .clients-section {
   // padding-bottom: 94px;
-  padding: 60px;
+  padding-bottom: 60px;
 }
 .clients-list .item:not(:last-child) {
   // margin-right: 30px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 .clients-list {
   // display: flex;
-}
-.clients-link:hover svg,
-.clients-link:focus svg {
-  fill: $ptimary-blue-color;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+  }
 }
 .clients-icon {
   fill: $social-color-icons;
@@ -21,17 +31,53 @@
   border-radius: 4px;
   align-items: center;
   width: 170px;
-
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 4 * 15px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 10 * 15px) / 6);
+    margin-bottom: 0;
+    margin-right: 0;
+    justify-content: space-around;
+  }
+  &:nth-last-child(-n + 2) {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 0;
+    }
+  }
+  &:nth-last-child(-n + 3) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  &:nth-child(2n) {
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+  &:nth-child(3n) {
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
+  }
   &:hover {
     border-color: $ptimary-blue-color;
   }
 }
+
 .clients-link {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  // width: 170px;
   height: 90px;
   border-radius: 4px;
+}
+.clients-link:hover svg,
+.clients-link:focus svg {
+  fill: $ptimary-blue-color;
 }
