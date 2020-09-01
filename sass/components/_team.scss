@@ -1,6 +1,7 @@
 .team-section {
   background-color: $secondary-bg-color;
-  padding-bottom: 94px;
+  // padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 .team .item {
   background-color: $accent-color;
@@ -34,9 +35,9 @@
 
   &:hover,
   &:focus {
-  background-color: $ptimary-blue-color;
-  color: $accent-color;
- }
+    background-color: $ptimary-blue-color;
+    color: $accent-color;
+  }
 }
 .social-link:hover svg {
   fill: $accent-color;
