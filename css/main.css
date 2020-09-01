@@ -451,6 +451,7 @@ p {
 
 .work-section {
   padding-bottom: 94px;
+  display: none;
 }
 
 .work .item {
