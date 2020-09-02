@@ -1162,8 +1162,6 @@ p {
 }
 
 .cards-list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
 }
