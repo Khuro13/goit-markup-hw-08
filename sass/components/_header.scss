@@ -40,35 +40,29 @@
   display: none;
 }
 .menu {
-  margin: 0;
-  text-align: center;
-  width: 480px;
-  display: none;
-  position: absolute;
-  z-index: 999;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  border-top: 1px solid #ececec;
-  background-color: $accent-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 4px 8px rgba(0, 0, 0, 0.04);
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    text-align: center;
+    width: 480px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    border-top: 1px solid #ececec;
+    background-color: $accent-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
   &.is-open {
     display: block;
-  }
-
-  @media screen and (min-width: 767px) {
-    position: absolute;
-    display: none;
-    top: 100%;
-    width: 100%;
-    left: 0;
   }
 
   @media screen and (min-width: 768px) {
@@ -144,8 +138,10 @@
   text-decoration: none;
   letter-spacing: 0.02em;
 
-  @media screen and (min-width: 768) {
-    display: flex;
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    font-size: 14px;
+    line-height: 1.14;
   }
 
   &:hover,
@@ -202,6 +198,11 @@
   // line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   @media screen and (min-width: 1200px) {
   }
