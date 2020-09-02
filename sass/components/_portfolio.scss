@@ -1,6 +1,12 @@
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .button-secondary {
   background-color: $secondary-bg-color;
@@ -12,22 +18,26 @@
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  margin-bottom: 15px;
 
   &:hover,
   &:focus {
-  background-color: $ptimary-blue-color;
-  color: $accent-color;
+    background-color: $ptimary-blue-color;
+    color: $accent-color;
   }
+}
+.filter {
+  // display: flex;
+  // justify-content: center;
+  // margin-right: auto;
+  // margin-left: auto;
+  // margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
-}
-.filter {
-  display: flex;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 50px;
 }
 .imcard {
   display: block;
@@ -99,12 +109,12 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards-list-link {
-display: block;
+  display: block;
 
   &:hover {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-  0px 1px 1px rgba(0, 0, 0, 0.12);
- }
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 }
 .cards-list-link:hover .descript-list {
   transform: translateY(0);
