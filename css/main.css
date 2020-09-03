@@ -1167,30 +1167,22 @@ p {
   overflow: hidden;
 }
 
-.cards-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .cards-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .cards-item {
-    width: calc((100% - 30px) / 2);
-    margin-right: 30px;
-  }
-  .cards-item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .cards-item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+    width: calc((100% - 30px * 2) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .cards-item {
-    width: calc((100% - 30px * 3) / 4);
-  }
-  .cards-item:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 0;
+    width: calc((100% - 30px * 3) / 3);
   }
 }
 
