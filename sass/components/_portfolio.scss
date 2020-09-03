@@ -1,12 +1,12 @@
 .portfolio-section {
   // padding-top: 94px;
   // padding-bottom: 94px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 94px;
+  //   padding-bottom: 94px;
+  // }
 }
 .button-secondary {
   background-color: $secondary-bg-color;
@@ -35,6 +35,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -93,6 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin: -15px;
   }
 }
 .other-title {
@@ -142,7 +147,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards-list-link {
-  display: block;
+  // display: block;
 
   &:hover {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
