@@ -37,13 +37,15 @@ p {
 }
 .section {
   padding-top: 60px;
+  padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .section-title {
   margin-top: 0;
-  // margin-bottom: 50px;
   margin-bottom: 30px;
   color: $title-text-color;
   font-weight: 700;
@@ -52,5 +54,6 @@ p {
   text-align: center;
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
