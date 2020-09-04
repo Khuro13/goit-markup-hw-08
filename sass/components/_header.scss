@@ -1,12 +1,6 @@
 .page-header {
   position: relative;
-  // height: 60px;
   border-bottom: 1px solid #ececec;
-  // padding-top: 16px;
-  // padding-bottom: 16px;
-
-  @media screen and (min-width: 768px) {
-  }
 }
 .menu-button {
   background-color: transparent;
@@ -89,9 +83,6 @@
   text-decoration: none;
   font-size: 26px;
   line-height: 1.19;
-
-  @media screen and (min-width: 1200px) {
-  }
 }
 .logo-accent {
   color: $ptimary-blue-color;
@@ -145,6 +136,7 @@
   text-decoration: none;
   letter-spacing: 0.02em;
   padding-bottom: 10px;
+
   @media screen and (min-width: 768px) {
     // display: flex;
     font-size: 14px;
@@ -212,6 +204,7 @@
     line-height: 1.16;
     justify-content: center;
     text-align: start;
+    -webkit-box-pack: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -245,6 +238,7 @@
   margin-right: 10px;
   vertical-align: middle;
   justify-content: center;
+  text-align: start;
 
   &:hover,
   &:focus {

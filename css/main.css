@@ -342,10 +342,10 @@ p {
   .contacts-nav .link {
     font-size: 12px;
     line-height: 1.16;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     text-align: start;
+    -webkit-box-pack: center;
   }
 }
 
@@ -387,6 +387,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: start;
 }
 
 .icon-nav:hover, .icon-nav:focus {
@@ -974,6 +975,14 @@ p {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-right: 30px;
+    margin-bottom: 0;
+    text-align: start;
+  }
+}
+
 .footer-socials {
   margin-bottom: 60px;
   text-align: center;
@@ -988,6 +997,12 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .down-text {
+    text-align: initial;
+  }
 }
 
 .socials-icon {
@@ -1050,6 +1065,23 @@ p {
 @media screen and (min-width: 480px) {
   .footer-input {
     margin-bottom: 20px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1066,7 +1098,8 @@ p {
   text-align: center;
   width: 200px;
   padding: 10px 24px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid transparent;
   border-radius: 4px;
   font-weight: 700;
@@ -1096,6 +1129,9 @@ p {
 }
 
 .footer-sign {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -1111,7 +1147,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .footer-sign {
-    margin-left: 93px;
+    margin-left: 94px;
   }
 }
 
