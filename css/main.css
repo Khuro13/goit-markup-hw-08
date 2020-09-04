@@ -115,6 +115,7 @@ p {
 .page-header {
   position: relative;
   height: 60px;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
@@ -230,7 +231,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ececec;
   min-height: 60px;
 }
 
@@ -247,11 +247,17 @@ p {
   width: 100%;
   height: 4px;
   left: 0;
-  bottom: 0;
+  bottom: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav-link--current::before {
+    padding-bottom: 8px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav {
+  .site-nav-link--current .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -279,6 +285,12 @@ p {
 
 .site-nav .link:hover, .site-nav .link:focus {
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .item:not(:last-child) {
+    margin-bottom: 52px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -359,6 +371,12 @@ p {
 
 .contacts-nav .link:hover, .contacts-nav .link:focus {
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-nav .item:not(:last-child) {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -917,8 +935,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .footer-content {
-    padding-top: 48px;
-    padding-bottom: 28px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
@@ -928,8 +944,6 @@ p {
 
 @media screen and (min-width: 1200px) {
   .footer-content {
-    padding-top: 48px;
-    padding-bottom: 28px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -974,19 +988,7 @@ p {
 
 .footer-socials {
   margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-socials {
-    width: calc((100% - 30px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-socials {
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
+  text-align: center;
 }
 
 .down-text {
@@ -1029,13 +1031,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .socials-item:not(:last-child) {
@@ -1107,6 +1109,16 @@ p {
 
 .footer-sign {
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-sign {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
