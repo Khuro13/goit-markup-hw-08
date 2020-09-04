@@ -287,10 +287,6 @@ p {
   }
 }
 
-.contacts-nav {
-  margin-left: auto;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-nav {
     -webkit-box-orient: vertical;
@@ -310,7 +306,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
     text-align: start;
   }
 }
