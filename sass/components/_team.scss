@@ -1,8 +1,5 @@
 .team-section {
   background-color: $secondary-bg-color;
-  // padding-bottom: 94px;
-
-  // padding: 60px 0;
 }
 .team .item {
   background-color: $accent-color;
@@ -50,7 +47,6 @@
 .social {
   display: flex;
   flex-direction: row;
-  // padding-bottom: 30px;
   padding-bottom: 24px;
 }
 .social-item:not(:last-child) {
@@ -94,17 +90,12 @@
 .social .item {
   margin-right: 0;
 }
-// .team .item:not(:last-child) {
-//   // margin-right: 30px;
-//   margin-bottom: 30px;
-// }
 .team-text {
   color: $primary-text-color;
 
   text-align: center;
 }
 .team {
-  // display: flex;
   font-size: 16px;
   line-height: 1.19;
 

@@ -1,13 +1,7 @@
 .clients-container {
 }
 .clients-section {
-  // padding-bottom: 94px;
-  // padding-bottom: 60px;
 }
-// .clients-list .item:not(:last-child) {
-//   margin-right: 30px;
-//   margin-bottom: 30px;
-// }
 .clients-list {
   // display: flex;
   @media screen and (min-width: 480px) {
@@ -66,7 +60,6 @@
 
 .clients-link {
   display: flex;
-  // flex-direction: row;
   align-items: center;
   justify-content: center;
   // width: 170px;

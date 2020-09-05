@@ -473,6 +473,7 @@ p {
 
 .main-button {
   display: inline-block;
+  cursor: pointer;
   min-width: 200px;
   padding: 10px 0;
   border: 1px solid transparent;
